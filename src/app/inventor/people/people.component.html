@@ -1,16 +1,23 @@
-<h2>
-  Getting the parameters from url
-</h2>
-<h3>
-  Person Id : {{personId}}
-</h3>
-<div>
-  <app-person [person]="person"></app-person>
+<div class="inventors d-flex flex-wrap">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let i of inventors">
+      <a class="nav-link" [routerLink]="['/inventor', 'people', i.id]" routerLinkActive="active">
+        {{i.first}}
+      </a>
+    </li>
+    <li class="list-group-item active" (click)="goHome()">Go Home</li>
+  </ul>
+  <div>
+    <router-outlet></router-outlet>
+    <!-- <app-person [person]="person"></app-person> -->
+  </div>
 </div>
+
+
 <div *ngIf="showChild">
-  <h3>
+  <h1>
     Query data is queried from url using Activated Route
-  </h3>
+  </h1>
   url:http://localhost:4200/inventor/people/10000?showChild=true
   url:http://localhost:4200/inventor/people/10000?showChild=false
 </div>

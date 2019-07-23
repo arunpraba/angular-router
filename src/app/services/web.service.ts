@@ -16,8 +16,11 @@ export class WebService {
   ];
   constructor() {}
   getUser(id) {
-    console.log(id)
     const people = this.inventors;
     return of(people.filter(person => person.id == parseInt(id)));
+  }
+
+  getAllUser() {
+    return of(this.inventors);
   }
 }

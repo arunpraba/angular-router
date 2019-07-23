@@ -1,4 +1,14 @@
-# AngularRouter
+# Angular Router
+
+## Routes Implemented in app-routing module
+
+## Childred Routes Implemented in inventor module
+
+## Custom PreloadingStrategy Implemented im app module
+
+## Lazy loading implemented in lazy module
+
+## Auth Guard implemented in about componented once loggedin it will work
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 

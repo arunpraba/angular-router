@@ -1,3 +1,4 @@
+import { AuthService } from './services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-router';
+  isLoggedin = localStorage.getItem('email') ? true :false
+  constructor(public auth:AuthService) {}
+  logOut() {
+    this.auth.logOut()
+  }
 }

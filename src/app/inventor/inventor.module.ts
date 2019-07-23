@@ -8,8 +8,15 @@ import { PersonComponent } from './people/person/person.component';
 
 /* For activating this router Router Module also need to be exported */
 const routes: Routes = [
-  { path: 'inventor', component: InventorComponent },
-  { path: 'inventor/people/:id', component: PeopleComponent }
+  {
+    path: 'inventor',
+    component: InventorComponent
+  },
+  {
+    path: 'inventor/people',
+    component: PeopleComponent,
+    children: [{ path: ':id', component: PersonComponent }]
+  }
 ];
 
 @NgModule({
