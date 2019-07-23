@@ -1,0 +1,16 @@
+<h2>
+  Getting the parameters from url
+</h2>
+<h3>
+  Person Id : {{personId}}
+</h3>
+<div>
+  <app-person [person]="person"></app-person>
+</div>
+<div *ngIf="showChild">
+  <h3>
+    Query data is queried from url using Activated Route
+  </h3>
+  url:http://localhost:4200/inventor/people/10000?showChild=true
+  url:http://localhost:4200/inventor/people/10000?showChild=false
+</div>
