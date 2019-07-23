@@ -2,7 +2,7 @@
 
 ## Routes Implemented in app-routing module
 
-## Childred Routes Implemented in inventor module
+## Children Routes Implemented in inventor module
 
 ## Custom PreloadingStrategy Implemented im app module
 
