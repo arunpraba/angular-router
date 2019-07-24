@@ -5,12 +5,13 @@ body {
 
 .app-center {
   display: flex;
-  height: 90vh;
+  height: 75vh;
   text-transform: capitalize;
   justify-content: center;
   align-items: center;
 }
 
-.navbar {
+.navbar,
+.card {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
